@@ -11,7 +11,7 @@
         android:id="@+id/textView"
         android:layout_width="163dp"
         android:layout_height="0dp"
-        android:layout_marginTop="312dp"
+        android:layout_marginTop="300dp"
 
         android:fontFamily="casual"
         android:text="Sad"
@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/addreason"
         android:layout_width="500dp"
         android:layout_height="800dp"
         android:layout_marginTop="168dp"
@@ -53,11 +53,11 @@
 
 
     <Button
-        android:id="@+id/login_button"
+        android:id="@+id/pick_button"
         android:layout_width="400dp"
-        android:layout_height= "100dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginBottom="250dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="220dp"
+        android:backgroundTint="@color/blue"
         android:text="Select Mood"
         android:textSize="30sp"
         app:cornerRadius="20dp"

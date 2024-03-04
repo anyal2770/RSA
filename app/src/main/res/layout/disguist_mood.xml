@@ -4,22 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/red"
-
+    android:background="@drawable/greendark"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="163dp"
+        android:layout_width="300dp"
         android:layout_height="0dp"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="312dp"
 
-        android:text="    Vexed"
-        android:fontFamily="sans-serif-black"
-        android:textColor="@color/white"
-        android:textSize="45sp"
+        android:fontFamily="casual"
+        android:text="Disgusted"
+        android:textColor="@color/black"
+        android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,29 +25,31 @@
         android:id="@+id/editText"
         android:layout_width="500dp"
         android:layout_height="800dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="168dp"
 
+        android:fontFamily="casual"
         android:padding="100dp"
         android:text="Add A Reason"
-        android:fontFamily="sans-serif-black"
-        android:textColor="@color/white"
+
+        android:textColor="@color/black"
         android:textSize="45sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.359"
+        app:layout_constraintHorizontal_bias="0.348"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="361dp"
-        android:layout_height="386dp"
+        android:layout_width="344dp"
+        android:layout_height="348dp"
         android:layout_marginStart="13dp"
         android:layout_marginEnd="13dp"
-        android:layout_marginBottom="392dp"
-        android:src="@drawable/angry"
+        android:layout_marginBottom="396dp"
+        android:src="@drawable/disguist"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -57,9 +57,9 @@
         android:layout_width="400dp"
         android:layout_height= "100dp"
         android:layout_marginTop="0dp"
-        android:layout_marginBottom="220dp"
+        android:layout_marginBottom="200dp"
         android:text="Select Mood"
-        android:backgroundTint="@color/red"
+        android:backgroundTint="@color/darkgreen"
         android:textSize="30sp"
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
