@@ -3,4 +3,14 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="lavender">#8692f7</color>
+    <color name = "brown">#533E2D</color>
+    <color name="red">#96031A</color>
+    <color name="lime">#D1EFB5</color>
+    <color name="pink">#F49390</color>
+    <color name="yellow">#EDAE49</color>
+    <color name="blue">#30638E</color>
+    <color name="lightblue">#A0D2DB</color>
+    <color name="purple">#C490D1</color>
+    <color name="darkgreen">#8DB580</color>
+    <color name = "babyblue">#C5D1EB</color>
 </resources>
