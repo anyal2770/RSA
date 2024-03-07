@@ -24,27 +24,39 @@ import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity extends AppCompatActivity {
     Button pickMoodButton;
-    EditText reasonInput;
+    Button pickSleepButton;
+    Button backButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ImageAdapter adapter = new ImageAdapter(MainActivity.this);
+
         setContentView(R.layout.activity_main);
-        ViewPager viewPager = findViewById(R.id.viewpager);
-
-
         pickMoodButton = findViewById(R.id.mood_button);
-
-
+        backButton = findViewById(R.id.back_button);
+        pickSleepButton = findViewById(R.id.sleep_button);
+        backButton.setVisibility(View.GONE);
         pickMoodButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ImageAdapter adapter = new ImageAdapter(MainActivity.this);
-                viewPager.setAdapter(adapter);
+                Intent intent = new Intent(MainActivity.this, layoutClass.class);
+                startActivity(intent);
+                //ViewPager viewPager = findViewById(R.id.viewpager);
+                //ImageAdapter adapter = new ImageAdapter(MainActivity.this); // Use MainActivity.this
+                //viewPager.setAdapter(adapter);
                 pickMoodButton.setVisibility(View.GONE);
+                //backButton.setVisibility(View.GONE);
+                pickSleepButton.setVisibility(View.GONE);
             }
         });
+        pickSleepButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, sleepClass.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 }
-
