@@ -27,6 +27,7 @@
         </activity>
         <activity android:name=".sleepClass" />
         <activity android:name=".layoutClass" />
+        <activity android:name=".DiaryActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />

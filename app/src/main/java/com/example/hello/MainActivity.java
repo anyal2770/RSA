@@ -25,7 +25,7 @@ import com.google.firebase.database.ValueEventListener;
 public class MainActivity extends AppCompatActivity {
     Button pickMoodButton;
     Button pickSleepButton;
-    Button backButton;
+    Button diaryButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,20 +33,21 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
         pickMoodButton = findViewById(R.id.mood_button);
-        backButton = findViewById(R.id.back_button);
+        Button backButton = findViewById(R.id.back_button);
+        diaryButton = findViewById(R.id.diary_button);
         pickSleepButton = findViewById(R.id.sleep_button);
         backButton.setVisibility(View.GONE);
         pickMoodButton.setOnClickListener(new View.OnClickListener() {
+            ;
             @Override
             public void onClick(View view) {
+
                 Intent intent = new Intent(MainActivity.this, layoutClass.class);
                 startActivity(intent);
                 //ViewPager viewPager = findViewById(R.id.viewpager);
                 //ImageAdapter adapter = new ImageAdapter(MainActivity.this); // Use MainActivity.this
                 //viewPager.setAdapter(adapter);
-                pickMoodButton.setVisibility(View.GONE);
-                //backButton.setVisibility(View.GONE);
-                pickSleepButton.setVisibility(View.GONE);
+
             }
         });
         pickSleepButton.setOnClickListener(new View.OnClickListener() {
@@ -56,7 +57,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        diaryButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, DiaryActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }
