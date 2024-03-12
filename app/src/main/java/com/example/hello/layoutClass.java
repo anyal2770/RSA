@@ -15,6 +15,7 @@ public class layoutClass extends AppCompatActivity {
     Button backButton;
     Button pickMoodButton;
     Button pickSleepButton;
+    Button friendsButton;
     EditText addReason;
     Button diaryButton;
     @Override
