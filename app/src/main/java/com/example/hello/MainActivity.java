@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         diaryButton = findViewById(R.id.diary_button);
         pickSleepButton = findViewById(R.id.sleep_button);
         backButton.setVisibility(View.GONE);
+        //Button qual = findViewById(R.id.quality_button);
         pickMoodButton.setOnClickListener(new View.OnClickListener() {
             ;
             @Override
@@ -64,6 +65,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        /*qual.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, SleepQuality.class);
+                startActivity(intent);
+            }
+        });
+        */
 
     }
 }

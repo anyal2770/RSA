@@ -1,4 +1,4 @@
-package com.example.hello;
+/*package com.example.hello;
 
 import com.twilio.Twilio;
 import android.content.Context;
@@ -39,3 +39,4 @@ public class friendsActivity extends AppCompatActivity {
 }
 
 
+*/
