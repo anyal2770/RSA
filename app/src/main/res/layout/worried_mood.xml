@@ -64,7 +64,7 @@
         android:textColor="@color/white"
         android:textSize="30sp"
         app:cornerRadius="20dp"
-        android:backgroundTint="@color/navy"
+        android:backgroundTint="@color/lime"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
