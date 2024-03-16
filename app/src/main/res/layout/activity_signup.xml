@@ -10,6 +10,12 @@
     android:background="@drawable/main"
     tools:context=".SignupActivity">
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="169dp"
+        android:layout_height="59dp"
+        app:srcCompat="@drawable/image_removebg" />
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

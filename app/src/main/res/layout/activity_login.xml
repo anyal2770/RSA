@@ -11,6 +11,12 @@
     android:background="@drawable/main"
     tools:context=".LoginActivity">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="224dp"
+        android:layout_height="239dp"
+        app:srcCompat="@drawable/image_removebg" />
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,6 +31,7 @@
             android:layout_gravity="center_horizontal"
             android:padding="24dp"
             android:background="@drawable/lavender_border">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
