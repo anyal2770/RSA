@@ -23,15 +23,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/diaryText"
+        android:id="@+id/phoneText"
         android:layout_width="500dp"
         android:layout_height="800dp"
         android:layout_marginTop="0dp"
 
         android:fontFamily="sans-serif-black"
         android:padding="100dp"
-        android:text="Enter a phone number here"
-
+        android:text="Your friend will receive a sms to add you as a friend and will then receive automatic updates on your mood, sleep etc."
         android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,14 +39,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/diaryText"
+        android:id="@+id/editText2"
         android:layout_width="500dp"
         android:layout_height="800dp"
-        android:layout_marginTop="80dp"
-
+        android:layout_marginTop="100dp"
+        android:hint="Enter Number"
+        android:inputType="textPersonName"
         android:fontFamily="sans-serif-black"
         android:padding="100dp"
-        android:text="Your friend will receive a text to accept you as a friend and will automatically see updates on your mood, sleep etc."
+
 
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -60,7 +60,7 @@
         android:id="@+id/back_button"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="490dp"
         android:layout_marginBottom="100dp"
         android:backgroundTint="@color/blue"
         android:text="Back"
@@ -74,7 +74,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/login_button"
+        android:id="@+id/savenumber"
         android:layout_width="200dp"
         android:layout_height="0dp"
         android:layout_marginStart="1dp"

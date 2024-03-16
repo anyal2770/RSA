@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     Button pickMoodButton;
     Button pickSleepButton;
     Button diaryButton;
+    Button friendButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         Button backButton = findViewById(R.id.back_button);
         diaryButton = findViewById(R.id.diary_button);
         pickSleepButton = findViewById(R.id.sleep_button);
+        friendButton = findViewById(R.id.friend_button);
         backButton.setVisibility(View.GONE);
         //Button qual = findViewById(R.id.quality_button);
         pickMoodButton.setOnClickListener(new View.OnClickListener() {
@@ -62,6 +64,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, DiaryActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        friendButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Handle friend_button click event here
+                Intent intent = new Intent(MainActivity.this, friendsActivity.class);
                 startActivity(intent);
             }
         });
