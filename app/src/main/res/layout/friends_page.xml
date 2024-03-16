@@ -14,9 +14,9 @@
         android:layout_marginTop = "4dp"
 
         android:text="Add Friend"
-        android:fontFamily="cursive"
+        android:fontFamily="@font/lexendregular"
         android:textColor="@color/black"
-        android:textSize="65sp"
+        android:textSize="60sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,7 +28,7 @@
         android:layout_height="800dp"
         android:layout_marginTop="0dp"
 
-        android:fontFamily="sans-serif-black"
+        android:fontFamily="@font/lexendregular"
         android:padding="100dp"
         android:text="Your friend will receive a sms to add you as a friend and will then receive automatic updates on your mood, sleep etc."
         android:textColor="@color/black"
@@ -45,7 +45,7 @@
         android:layout_marginTop="100dp"
         android:hint="Enter Number"
         android:inputType="textPersonName"
-        android:fontFamily="sans-serif-black"
+        android:fontFamily="@font/lexendregular"
         android:padding="100dp"
 
 
@@ -64,6 +64,7 @@
         android:layout_marginBottom="100dp"
         android:backgroundTint="@color/blue"
         android:text="Back"
+        android:fontFamily="@font/lexendregular"
         android:textSize="30sp"
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -82,6 +83,7 @@
         android:layout_marginBottom="20dp"
         android:backgroundTint="@color/lavender"
         android:text="Save"
+        android:fontFamily="@font/lexendregular"
         android:textSize="30sp"
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -26,6 +26,7 @@ public class friendsActivity extends AppCompatActivity {
     private static final int BUTTON_SAVE_NUMBER_ID = R.id.savenumber;
     private static final int EDIT_TEXT_PHONE_NUMBER_ID = R.id.editText2;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

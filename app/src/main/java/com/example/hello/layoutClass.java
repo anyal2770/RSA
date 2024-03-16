@@ -31,13 +31,14 @@ public class layoutClass extends AppCompatActivity {
         backButton = findViewById(R.id.back_button);
         pickMoodButton = findViewById(R.id.mood_button);
         diaryButton = findViewById(R.id.diary_button);
-
+        friendsButton = findViewById(R.id.friend_button);
         pickSleepButton = findViewById(R.id.sleep_button);
         backButton.setVisibility(View.VISIBLE);
 
         pickMoodButton.setVisibility(View.GONE);
         pickSleepButton.setVisibility(View.GONE);
         diaryButton.setVisibility(View.GONE);
+        friendsButton.setVisibility(View.GONE);
         // pickSleepButton.setVisibility(View.GONE); // Hide pickSleepButton initially
 
         backButton.setOnClickListener(new View.OnClickListener() {

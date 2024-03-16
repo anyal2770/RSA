@@ -37,8 +37,9 @@ public class MainActivity extends AppCompatActivity {
         Button backButton = findViewById(R.id.back_button);
         diaryButton = findViewById(R.id.diary_button);
         pickSleepButton = findViewById(R.id.sleep_button);
-        friendButton = findViewById(R.id.friend_button);
         backButton.setVisibility(View.GONE);
+        friendButton = findViewById(R.id.friend_button);
+
         //Button qual = findViewById(R.id.quality_button);
         pickMoodButton.setOnClickListener(new View.OnClickListener() {
             ;
