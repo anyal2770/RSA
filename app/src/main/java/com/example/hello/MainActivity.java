@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     Button pickSleepButton;
     Button diaryButton;
     Button friendButton;
-
+    Button resourcesButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         pickSleepButton = findViewById(R.id.sleep_button);
         backButton.setVisibility(View.GONE);
         friendButton = findViewById(R.id.friend_button);
+        resourcesButton = findViewById(R.id.resources_button);
 
         //Button qual = findViewById(R.id.quality_button);
         pickMoodButton.setOnClickListener(new View.OnClickListener() {
@@ -74,6 +75,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // Handle friend_button click event here
                 Intent intent = new Intent(MainActivity.this, friendsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        resourcesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, resourcesActivity.class);
                 startActivity(intent);
             }
         });

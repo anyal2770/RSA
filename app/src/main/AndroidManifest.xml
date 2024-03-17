@@ -35,7 +35,8 @@
         <activity android:name=".sleepClass" />
         <activity android:name=".layoutClass" />
         <activity android:name=".DiaryActivity" />
-        <activity android:name=".SleepQuality" />
+        <activity android:name=".resourcesActivity" />
+        <activity android:name=".crisisActivity" />
         <activity android:name=".friendsActivity" />
 
         <activity

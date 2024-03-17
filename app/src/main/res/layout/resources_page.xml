@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/lexendregular"
+        android:text="Resources"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintBottom_toTopOf="@id/buttons_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How to deal with Stress"
+                android:fontFamily="@font/lexendregular"
+                android:textSize="34sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Engaging in physical activities, no matter how small, can uplift our spirits and infuse us with a sense of vitality.
+
+Nourishing our bodies with wholesome foods and nourishing nutrients, fuels not only our physical health but also our emotional well-being.
+
+As we navigate life's twists and turns, let's remember to treat ourselves with compassion and understanding. Let's acknowledge that it's okay to seek support, to set boundaries, and to say no when necessary. "
+                android:fontFamily="@font/lexendregular"
+                android:textSize="24sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How to Deal with Isolation"
+                android:fontFamily="@font/lexendregular"
+                android:textSize="34sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Feeling lonely can really knock us off balance, making us wish for someone to share our thoughts and feelings with. It's a universal feeling that we all go through at some point, so there's no need to feel like you're the only one going through it. Sometimes, all we need is a friendly chat or a shoulder to lean on. Simple things like reaching out to old friends, joining a club, or even volunteering can make a big difference.
+
+"
+                android:fontFamily="@font/lexendregular"
+                android:textSize="24sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How to Grieve"
+                android:fontFamily="@font/lexendregular"
+                android:textSize="34sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Self-Care: Prioritize sleep, exercise, nutritious meals, and relaxation activities like meditation.
+Stick to Routine: Maintain consistent sleep and meal times to regain a sense of stability.
+Attend to Emotions: Allow yourself to feel and express emotions, and cherish memories of your loved one.
+Reach Out: Stay connected with loved ones for support and companionship.
+Seek Help: Consider speaking to a therapist or grief counselor if needed."
+                android:fontFamily="@font/lexendregular"
+                android:textSize="24sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="When to seek help"
+                android:fontFamily="@font/lexendregular"
+                android:textSize="34sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recognizing potential emotional, behavioral, or developmental issues in individuals across different age groups is crucial for providing appropriate support. In children, signs such as declining school performance, withdrawal from activities, sleep disturbances, and aggression may indicate underlying issues. Similarly, adolescents may exhibit social withdrawal, substance abuse, depression, or rebellious behavior. Adults might experience a decline in work performance, substance abuse, depression, or sudden changes in behavior. These symptoms can vary widely, and it's essential to seek professional evaluation for accurate diagnosis and intervention."
+                android:fontFamily="@font/lexendregular"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttons_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/crisis_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/red"
+            android:fontFamily="@font/lexendregular"
+            android:text="Crisis"
+            android:textSize="30sp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue"
+            android:fontFamily="@font/lexendregular"
+            android:text="Back"
+            android:textSize="30sp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            app:cornerRadius="20dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
