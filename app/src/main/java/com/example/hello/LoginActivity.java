@@ -85,7 +85,10 @@ public class LoginActivity extends AppCompatActivity {
                         String nameFromDB = snapshot.child(userUsername).child("name").getValue(String.class);
                         String emailFromDB = snapshot.child(userUsername).child("email").getValue(String.class);
                         String usernameFromDB = snapshot.child(userUsername).child("username").getValue(String.class);
-                        Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+
+                        // Create intent to start MainActivity
+                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                        // Pass necessary data via intent extras if needed
                         intent.putExtra("name", nameFromDB);
                         intent.putExtra("email", emailFromDB);
                         intent.putExtra("username", usernameFromDB);
@@ -102,6 +105,7 @@ public class LoginActivity extends AppCompatActivity {
             }
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
+                // Handle onCancelled event if needed
             }
         });
     }

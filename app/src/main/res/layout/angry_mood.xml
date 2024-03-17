@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/red"
+    android:background="@drawable/red2"
 
     tools:context=".MainActivity">
 
@@ -16,7 +16,7 @@
 
         android:text="    Vexed"
         android:fontFamily="sans-serif-black"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="45sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.459"
@@ -32,7 +32,7 @@
         android:padding="100dp"
         android:text="Add A Reason"
         android:fontFamily="sans-serif-black"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="45sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.359"

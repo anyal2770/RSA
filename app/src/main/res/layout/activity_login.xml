@@ -6,9 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+
     android:gravity="center"
-    android:background="@drawable/img"
+    android:background="@drawable/main"
     tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="224dp"
+        android:layout_height="239dp"
+        app:srcCompat="@drawable/image_removebg" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -24,11 +31,13 @@
             android:layout_gravity="center_horizontal"
             android:padding="24dp"
             android:background="@drawable/lavender_border">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Login"
                 android:textSize="36sp"
+                android:fontFamily="@font/lexendregular"
                 android:textAlignment="center"
                 android:textStyle="bold"
                 android:textColor="@color/lavender"/>
@@ -41,6 +50,7 @@
                 android:layout_marginTop="40dp"
                 android:padding="8dp"
                 android:hint="Username"
+                android:fontFamily="@font/lexendregular"
                 android:drawableLeft="@drawable/baseline_person_2_24"
                 android:drawablePadding="8dp"
                 android:textColor="@color/black"/>
@@ -51,6 +61,7 @@
                 android:background="@drawable/lavender_border"
                 android:layout_marginTop="40dp"
                 android:padding="8dp"
+                android:fontFamily="@font/lexendregular"
                 android:hint="Password"
                 android:inputType="textPassword"
                 android:drawableLeft="@drawable/baseline_lock_24"
@@ -62,6 +73,7 @@
                 android:text="Login"
                 android:id= "@+id/login_button"
                 android:textSize="18sp"
+                android:fontFamily="@font/lexendregular"
                 android:layout_marginTop = "30sp"
                 app:cornerRadius = "20dp"/>
             <TextView
@@ -70,6 +82,7 @@
                 android:id="@+id/signupRedirectText"
                 android:text="Not yet registered? Sign up!"
                 android:padding = "8dp"
+                android:fontFamily="@font/lexendregular"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:textSize = "18sp"

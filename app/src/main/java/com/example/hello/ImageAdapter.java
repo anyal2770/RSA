@@ -23,7 +23,7 @@ public class ImageAdapter extends PagerAdapter {
     private Context mContext;
      int mimageIds[] =
              {R.layout.anxious_mood, R.layout.bored_mood, R.layout.sad_mood, R.layout.angry_mood, R.layout.content_mood,
-                     R.layout.disguist_mood, R.layout.happy_mood, R.layout.flirty_mood, R.layout.surprise_mood,R.layout.tired_mood};
+                     R.layout.disguist_mood, R.layout.happy_mood, R.layout.flirty_mood, R.layout.surprise_mood,R.layout.tired_mood, R.layout.stoic_mood, R.layout.thankful_mood,R.layout.proud_mood, R.layout.worried_mood};
     ImageAdapter(Context context){
         mContext = context;
     }

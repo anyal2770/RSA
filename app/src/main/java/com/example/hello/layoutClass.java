@@ -15,7 +15,12 @@ public class layoutClass extends AppCompatActivity {
     Button backButton;
     Button pickMoodButton;
     Button pickSleepButton;
+    Button friendsButton;
     EditText addReason;
+    Button diaryButton;
+
+    Button resourcesButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,12 +33,17 @@ public class layoutClass extends AppCompatActivity {
 
         backButton = findViewById(R.id.back_button);
         pickMoodButton = findViewById(R.id.mood_button);
-
+        diaryButton = findViewById(R.id.diary_button);
+        friendsButton = findViewById(R.id.friend_button);
         pickSleepButton = findViewById(R.id.sleep_button);
+        resourcesButton = findViewById(R.id.resources_button);
         backButton.setVisibility(View.VISIBLE);
 
         pickMoodButton.setVisibility(View.GONE);
         pickSleepButton.setVisibility(View.GONE);
+        resourcesButton.setVisibility(View.GONE);
+        diaryButton.setVisibility(View.GONE);
+        friendsButton.setVisibility(View.GONE);
         // pickSleepButton.setVisibility(View.GONE); // Hide pickSleepButton initially
 
         backButton.setOnClickListener(new View.OnClickListener() {

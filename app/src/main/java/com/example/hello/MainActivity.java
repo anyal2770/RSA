@@ -25,28 +25,34 @@ import com.google.firebase.database.ValueEventListener;
 public class MainActivity extends AppCompatActivity {
     Button pickMoodButton;
     Button pickSleepButton;
-    Button backButton;
-
+    Button diaryButton;
+    Button friendButton;
+    Button resourcesButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
         pickMoodButton = findViewById(R.id.mood_button);
-        backButton = findViewById(R.id.back_button);
+        Button backButton = findViewById(R.id.back_button);
+        diaryButton = findViewById(R.id.diary_button);
         pickSleepButton = findViewById(R.id.sleep_button);
         backButton.setVisibility(View.GONE);
+        friendButton = findViewById(R.id.friend_button);
+        resourcesButton = findViewById(R.id.resources_button);
+
+        //Button qual = findViewById(R.id.quality_button);
         pickMoodButton.setOnClickListener(new View.OnClickListener() {
+            ;
             @Override
             public void onClick(View view) {
+
                 Intent intent = new Intent(MainActivity.this, layoutClass.class);
                 startActivity(intent);
                 //ViewPager viewPager = findViewById(R.id.viewpager);
                 //ImageAdapter adapter = new ImageAdapter(MainActivity.this); // Use MainActivity.this
                 //viewPager.setAdapter(adapter);
-                pickMoodButton.setVisibility(View.GONE);
-                //backButton.setVisibility(View.GONE);
-                pickSleepButton.setVisibility(View.GONE);
+
             }
         });
         pickSleepButton.setOnClickListener(new View.OnClickListener() {
@@ -56,7 +62,38 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        diaryButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, DiaryActivity.class);
+                startActivity(intent);
+            }
+        });
 
+        friendButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Handle friend_button click event here
+                Intent intent = new Intent(MainActivity.this, friendsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        resourcesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, resourcesActivity.class);
+                startActivity(intent);
+            }
+        });
+        /*qual.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, SleepQuality.class);
+                startActivity(intent);
+            }
+        });
+        */
 
     }
 }
