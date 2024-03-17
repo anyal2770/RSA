@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
@@ -12,7 +13,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to our app!"
+        android:text="Welcome to Nova!"
         android:layout_marginBottom="700dp"
         android:textColor="@color/black"
         android:fontFamily="@font/lexendregular"
@@ -78,7 +79,7 @@
         android:id="@+id/diary_button"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="440dp"
+        android:layout_marginTop="450dp"
         android:layout_marginBottom="150dp"
         android:fontFamily="@font/lexendregular"
         android:backgroundTint="@color/blue"
@@ -128,7 +129,7 @@
         app:layout_constraintVertical_bias="1.0" />
     <Button
         android:id="@+id/resources_button"
-        android:layout_width="400dp"
+        android:layout_width="0dp"
         android:layout_height="100dp"
         android:layout_marginTop="-100dp"
         android:backgroundTint="@color/blue"

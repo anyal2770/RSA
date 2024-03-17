@@ -2,6 +2,7 @@ package com.example.hello;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -54,6 +55,15 @@ public class friendsActivity extends AppCompatActivity {
                 }
             }
         });
+        Button backButton = findViewById(R.id.back_button);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Set the visibility of your layouts as needed
+                Intent intent = new Intent(friendsActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private boolean isValidPhoneNumber(String phoneNumber) {
@@ -81,7 +91,7 @@ public class friendsActivity extends AppCompatActivity {
     }
 
     private void sendHelloMessage(String phoneNumber) {
-        String message = "Hello! A new friend has been added.";
+        String message = "Hi! I just added you on Nova! It will be sending you automatic updates on how I'm doing";
         sendSMS(phoneNumber, message);
     }
 

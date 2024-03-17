@@ -46,7 +46,7 @@ public class crisisActivity extends AppCompatActivity{
                 // Check if friend's phone number is saved
                 if (!phoneNumber.isEmpty()) {
                     // Construct message with crisis alert
-                    String message = "Please check up on your friend as soon as possible, they are in a crisis";
+                    String message = "Please check up on me as soon as possible, I am in a crisis";
 
                     // Send SMS with crisis alert
                     smsManager.sendTextMessage(phoneNumber, null, message, null, null);
